@@ -137,7 +137,7 @@ func set3DFormat(vd *library.VideoData, dto *videoDataDto) {
 		case util.StrSliceEquals(t.Name, t.Aliases, internal.TagVR_RF52):
 			dto.Is3d = true
 			dto.ScreenType = "rf52"
-			dto.StereoMode = "cuv"
+			dto.StereoMode = "sbs"
 			continue
 		case util.StrSliceEquals(t.Name, t.Aliases, internal.TagVR_SBS):
 			dto.Is3d = true
